@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quizzler"
+version = "0.1.0"
+description = "True/false quiz app with Tkinter and the Open Trivia Database (Udemy 100 Days of Code, Day 34)"
+readme = "README.md"
+requires-python = ">=3.13"
+license = "AGPL-3.0-only"
+license-files = ["LICENSE"]
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8",
+    "pytest-cov>=5",
+    "ruff>=0.6",
+    "mypy>=1.11",
+]
+
+[project.scripts]
+quizzler = "quizzler.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+quizzler = ["presentation/images/*.png"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 88
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "UP", "B"]
+
+[tool.mypy]
+strict = true
+mypy_path = "src"
