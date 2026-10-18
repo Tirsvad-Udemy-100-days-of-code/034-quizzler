@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-18 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | pending |
+| 2026-10-18 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | [7916603] |
 
 ---
 
@@ -60,3 +60,4 @@ Go — every Mandatory criterion passes; ruff, ruff format, mypy --strict and py
 
 [QC-PY-001]: ../../../framework/qc/code/qc-programming-python.md
 [ADR-0001]: ../../adr/adr-0001-architecture-and-dependencies.md
+[7916603]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/034-quizzler/commit/79166039748a84d15538bd57c6633ccecfe53921
