@@ -11,7 +11,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-18 | Accepted | Jens Tirsvad Nielsen | S01 | Initial version, accepted by the Product Owner with the plan | pending |
+| 2026-10-18 | Accepted | Jens Tirsvad Nielsen | S01 | Initial version, accepted by the Product Owner with the plan | [2133243] |
 
 ---
 
@@ -89,3 +89,4 @@ A No-Go on a gateway stops the chain: later windows move by the days needed to f
 [MIL-002]: ./milestones/mil-002-quiz-core.md
 [MIL-003]: ./milestones/mil-003-quiz-interface.md
 [MIL-004]: ./milestones/mil-004-documentation-and-wiki.md
+[2133243]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/034-quizzler/commit/21332432e3c81336344ef3dbc71123aab76c9cfb

@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-18 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version with the planning baseline | pending |
+| 2026-10-18 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version with the planning baseline | [2133243] |
 
 ---
 
@@ -59,3 +59,4 @@ Tracks backward/forward links between artifact instances so that the Business Ca
 [RC-007]: ./reviews/rc-007-mil-002.md
 [RC-008]: ./reviews/rc-008-mil-003.md
 [RC-009]: ./reviews/rc-009-mil-004.md
+[2133243]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/034-quizzler/commit/21332432e3c81336344ef3dbc71123aab76c9cfb
