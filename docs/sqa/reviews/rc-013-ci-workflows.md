@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-18 | Proposed | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | pending |
+| 2026-10-18 | Proposed | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | [6464f62] |
 
 ---
 
@@ -88,3 +88,4 @@ Go-with-conditions — every applicable Mandatory criterion passes on the files;
 
 [QC-WF-001]: ../../../framework/qc/code/qc-workflow.md
 [QC-YML-001]: ../../../framework/qc/code/qc-yaml.md
+[6464f62]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/034-quizzler/commit/6464f62afbc644bebf4097cef0eb9ab42f599f97
