@@ -85,4 +85,28 @@ TRUE_IMAGE_NAME: Final[str] = "true.png"
 ## @brief File name of the "false" button image.
 FALSE_IMAGE_NAME: Final[str] = "false.png"
 
+## @brief Vertical padding around the question canvas, in pixels.
+CANVAS_PADDING_Y: Final[int] = 50
+
+## @brief Question text color while the canvas shows right/wrong feedback.
+FEEDBACK_TEXT_COLOR: Final[str] = "white"
+
+## @brief Position of the question text inside the canvas (x, y).
+CANVAS_QUESTION_POSITION: Final[tuple[int, int]] = (150, 125)
+
+## @brief Padding around the true/false buttons, in pixels.
+BUTTON_PADDING: Final[int] = 0
+
+## @brief Prefix of the score label text.
+SCORE_LABEL_PREFIX: Final[str] = "Score: "
+
+## @brief Text shown when all questions have been answered.
+FINISHED_TEXT: Final[str] = "You have reached the end of the quiz."
+
+## @brief Text shown when the questions could not be loaded.
+ERROR_TEXT: Final[str] = "Quizzler could not load the questions."
+
+## @brief Width at which the error message wraps, in pixels.
+ERROR_WRAP_WIDTH: Final[int] = 300
+
 ## @}
