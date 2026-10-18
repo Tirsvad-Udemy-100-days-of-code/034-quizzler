@@ -9,8 +9,8 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-18 | Deprecated | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added RC-010 (Python source of MIL-001 (`src/quizzler`, `tests`)) | [cf94757] |
-| 2026-10-18 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added RC-011 (Python source of MIL-002 (`domain`, `application`, `infrastructure`)) | [0f8ab48] |
+| 2026-10-18 | Deprecated | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added RC-011 (Python source of MIL-002 (`domain`, `application`, `infrastructure`)) | [0f8ab48] |
+| 2026-10-18 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added RC-012 (Python source of MIL-003 (`presentation`, `main.py`)) | pending |
 
 ---
 
@@ -34,6 +34,7 @@ Tracks backward/forward links between artifact instances so that the Business Ca
 | [MIL-004] | MIL | en | it | [BC-001], [PP-001], [MIL-003] | README, screenshots and wiki | [RC-009] |
 | Python source of MIL-001 (`src/quizzler`, `tests`) | PY | - | - | [ADR-0001], [MIL-001] | - | [RC-010] |
 | Python source of MIL-002 (`domain`, `application`, `infrastructure`) | PY | - | - | [ADR-0001], [MIL-002] | - | [RC-011] |
+| Python source of MIL-003 (`presentation`, `main.py`) | PY | - | - | [ADR-0001], [MIL-003] | - | [RC-012] |
 
 ## Coverage Notes
 
@@ -63,6 +64,6 @@ Tracks backward/forward links between artifact instances so that the Business Ca
 [RC-008]: ./reviews/rc-008-mil-003.md
 [RC-009]: ./reviews/rc-009-mil-004.md
 [RC-010]: ./reviews/rc-010-py-mil-001.md
-[cf94757]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/034-quizzler/commit/cf947574a74d7685dbb467342112538663af5991
 [RC-011]: ./reviews/rc-011-py-mil-002.md
 [0f8ab48]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/034-quizzler/commit/0f8ab48feaaf83deb905fc58edad911dc9a619d2
+[RC-012]: ./reviews/rc-012-py-mil-003.md
