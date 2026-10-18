@@ -17,6 +17,8 @@ A desktop true/false quiz built with Tkinter that fetches its questions from the
 
 Quizzler shows one true/false question at a time, checks your answer when you press the True or False button, and keeps your score. Questions come from the Open Trivia Database API, with HTML entities such as `&quot;` turned into readable text.
 
+![Quizzler showing a question][screenshot-question]
+
 The repository is laid out in layers under `src/quizzler/`:
 
 | Folder | What it holds |
@@ -26,6 +28,9 @@ The repository is laid out in layers under `src/quizzler/`:
 | `infrastructure/` | The Open Trivia Database client (standard library only) |
 | `presentation/` | The Tkinter `QuizInterface` (the course's `ui.py`) and its view model |
 | `constants.py` | All constants (API URL, colours, fonts) |
+| `main.py` | The entry point that wires the layers together |
+
+The course's `data.py` is replaced by the API client, and its `question_data` by the records the API returns. The wiki ([English][wiki], [Dansk][wiki-da], [Bahasa Melayu][wiki-ms]) explains the mapping in more detail.
 
 Tests are in `tests/`, project documents in `docs/`. The code has Doxygen comments and a `Doxyfile`.
 
@@ -66,7 +71,13 @@ With the `.venv` active:
 python -m quizzler
 ```
 
-An internet connection is needed to fetch the questions.
+An internet connection is needed to fetch the questions. Press the green check for True and the red cross for False: the question box turns green for a right answer and red for a wrong one.
+
+| Right answer | Wrong answer |
+| --- | --- |
+| ![Right answer][screenshot-right] | ![Wrong answer][screenshot-wrong] |
+
+If the question service cannot be reached, a window with a short message is shown and the program exits with code 1.
 
 ## 🧪 Tests
 
@@ -110,6 +121,12 @@ The documents a newcomer needs, in reading order.
 [repository]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/034-quizzler
 [documentation]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/034-quizzler/wiki
 [issues]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/034-quizzler/issues
+[screenshot-question]: ./docs/images/question.png
+[screenshot-right]: ./docs/images/right-answer.png
+[screenshot-wrong]: ./docs/images/wrong-answer.png
+[wiki]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/034-quizzler/wiki
+[wiki-da]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/034-quizzler/wiki/Home-da
+[wiki-ms]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/034-quizzler/wiki/Home-ms
 [agents]: ./AGENTS.md
 [BC-001]: ./docs/business-case.md
 [SA-001]: ./docs/stakeholder-analysis.md
