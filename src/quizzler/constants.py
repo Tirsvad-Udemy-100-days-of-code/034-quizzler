@@ -88,6 +88,9 @@ FALSE_IMAGE_NAME: Final[str] = "false.png"
 ## @brief Vertical padding around the question canvas, in pixels.
 CANVAS_PADDING_Y: Final[int] = 50
 
+## @brief Question text color while the canvas shows right/wrong feedback.
+FEEDBACK_TEXT_COLOR: Final[str] = "white"
+
 ## @brief Position of the question text inside the canvas (x, y).
 CANVAS_QUESTION_POSITION: Final[tuple[int, int]] = (150, 125)
 

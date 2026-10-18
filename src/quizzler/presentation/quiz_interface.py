@@ -3,6 +3,7 @@
 import tkinter
 from collections.abc import Callable
 from pathlib import Path
+from typing import Literal
 
 from quizzler.constants import (
     BUTTON_PADDING,
@@ -16,6 +17,7 @@ from quizzler.constants import (
     ERROR_WRAP_WIDTH,
     FALSE_IMAGE_NAME,
     FEEDBACK_DELAY_MS,
+    FEEDBACK_TEXT_COLOR,
     IMAGE_DIRECTORY_NAME,
     QUESTION_FONT,
     QUESTION_WRAP_WIDTH,
@@ -80,10 +82,10 @@ class QuizInterface:
         """
         self.canvas.config(bg=CANVAS_BACKGROUND)
         text = self.view_model.get_next_question()
-        self.canvas.itemconfig(self.question_text, text=text)
-        if self.view_model.is_finished:
-            self.true_button.config(state=tkinter.DISABLED)
-            self.false_button.config(state=tkinter.DISABLED)
+        self.canvas.itemconfig(self.question_text, text=text, fill=THEME_COLOR)
+        self._set_buttons_state(
+            tkinter.DISABLED if self.view_model.is_finished else tkinter.NORMAL
+        )
 
     def true_pressed(self) -> None:
         """@brief Handle a click on the true button."""
@@ -100,8 +102,14 @@ class QuizInterface:
         """
         color = CANVAS_RIGHT_COLOR if is_correct else CANVAS_WRONG_COLOR
         self.canvas.config(bg=color)
+        self.canvas.itemconfig(self.question_text, fill=FEEDBACK_TEXT_COLOR)
+        self._set_buttons_state(tkinter.DISABLED)
         self.score_label.config(text=self.view_model.score_text)
         self.window.after(FEEDBACK_DELAY_MS, self.get_next_question)
+
+    def _set_buttons_state(self, state: Literal["normal", "disabled"]) -> None:
+        self.true_button.config(state=state)
+        self.false_button.config(state=state)
 
     def _build_score_label(self) -> tkinter.Label:
         label = tkinter.Label(
