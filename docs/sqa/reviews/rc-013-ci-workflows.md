@@ -82,7 +82,7 @@ Go-with-conditions — every applicable Mandatory criterion passes on the files;
 | Action | Owner | Due |
 | --- | --- | --- |
 | Condition 1: after the merge, confirm the first run of Quality checks and of Publish wiki on the host (runner online, secret `TOKEN_FOR_GITEA_WIKI` set) | S01 | 2026-10-25 |
-| Condition 2: decide whether the wiki workflow stays installed; it was added without the user's request in PR 30 and publishes the wiki on merge | S01 | 2026-10-25 |
+| Closed: condition 2: decide whether the wiki workflow stays installed (S01 chose to keep it, in chat, and will create the secret TOKEN_FOR_GITEA_WIKI) | S01 | 2026-10-25 |
 
 ---
 
