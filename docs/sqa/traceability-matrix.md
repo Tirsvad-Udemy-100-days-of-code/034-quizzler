@@ -10,7 +10,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-18 | Deprecated | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version with the planning baseline | [2133243] |
-| 2026-10-18 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added RC-010 (Python source of MIL-001 (`src/quizzler`, `tests`)) | pending |
+| 2026-10-18 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added RC-010 (Python source of MIL-001 (`src/quizzler`, `tests`)) | [cf94757] |
 
 ---
 
@@ -63,3 +63,4 @@ Tracks backward/forward links between artifact instances so that the Business Ca
 [RC-009]: ./reviews/rc-009-mil-004.md
 [2133243]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/034-quizzler/commit/21332432e3c81336344ef3dbc71123aab76c9cfb
 [RC-010]: ./reviews/rc-010-py-mil-001.md
+[cf94757]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/034-quizzler/commit/cf947574a74d7685dbb467342112538663af5991
