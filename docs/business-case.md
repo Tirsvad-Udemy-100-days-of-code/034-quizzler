@@ -12,7 +12,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-18 | Deprecated | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | [2133243] |
-| 2026-11-16 | Accepted | Jens Tirsvad Nielsen | S01 (AI as stand-in) | Added objective O8, success criterion SC9, a scope item, an out-of-scope item, a risk and constraints for the baseline milestone MIL-005; changed SC8 to five milestones; set the domain to education; reviewed in autonomous mode, not independent | pending |
+| 2026-11-16 | Accepted | Jens Tirsvad Nielsen | S01 (AI as stand-in) | Added objective O8, success criterion SC9, a scope item, an out-of-scope item, a risk and constraints for the baseline milestone MIL-005; changed SC8 to five milestones; set the domain to education; reviewed in autonomous mode, not independent | [77b48ec] |
 
 ---
 
@@ -153,3 +153,4 @@ Proceed — the scope is small, the risks have mitigations and every objective i
 [2133243]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/034-quizzler/commit/21332432e3c81336344ef3dbc71123aab76c9cfb
 [MIL-005]: ./milestones/mil-005-framework-baseline.md
 [PP-001]: ./project-plan.md
+[77b48ec]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/034-quizzler/commit/77b48ec969dadb9cee7c36ca091ee3977a06f030

@@ -12,7 +12,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-18 | Deprecated | Jens Tirsvad Nielsen | S01 | Initial version, accepted by the Product Owner with the plan | [2133243] |
-| 2026-11-16 | Accepted | Jens Tirsvad Nielsen | S01 (AI as stand-in) | Added the baseline gateway (MIL-005) with its schedule row, scope coverage, dependency, risk and Gantt entries; linked the first four gateways to their milestones on the git host; set the domain to education; reviewed in autonomous mode, not independent | pending |
+| 2026-11-16 | Accepted | Jens Tirsvad Nielsen | S01 (AI as stand-in) | Added the baseline gateway (MIL-005) with its schedule row, scope coverage, dependency, risk and Gantt entries; linked the first four gateways to their milestones on the git host; set the domain to education; reviewed in autonomous mode, not independent | [77b48ec] |
 
 ---
 
@@ -107,3 +107,4 @@ A No-Go on a gateway stops the chain: later windows move by the days needed to f
 [MIL-005]: ./milestones/mil-005-framework-baseline.md
 [RC-015]: ./sqa/reviews/rc-015-project-plan-baseline.md
 [M-549]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/034-quizzler/milestones/549
+[77b48ec]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/034-quizzler/commit/77b48ec969dadb9cee7c36ca091ee3977a06f030

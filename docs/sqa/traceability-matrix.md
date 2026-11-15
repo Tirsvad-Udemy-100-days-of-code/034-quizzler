@@ -11,7 +11,7 @@
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-18 | Deprecated | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added RC-011 (Python source of MIL-002 (`domain`, `application`, `infrastructure`)) | [0f8ab48] |
 | 2026-10-18 | Deprecated | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added RC-012 (Python source of MIL-003 (`presentation`, `main.py`)) | [7916603] |
-| 2026-11-16 | Accepted | Jens Tirsvad Nielsen | S01 (AI as stand-in) | Added MIL-005, the review records RC-014 to RC-017 and the wiki; set the reviewed rows of BC-001 and PP-001 and the domain of the changed rows to education (autonomous, not independent) | pending |
+| 2026-11-16 | Accepted | Jens Tirsvad Nielsen | S01 (AI as stand-in) | Added MIL-005, the review records RC-014 to RC-017 and the wiki; set the reviewed rows of BC-001 and PP-001 and the domain of the changed rows to education (autonomous, not independent) | [77b48ec] |
 
 ---
 
@@ -83,3 +83,4 @@ Tracks backward/forward links between artifact instances so that the Business Ca
 [RC-017]: ./reviews/rc-017-wiki.md
 [TM-001]: ./traceability-matrix.md
 [RC-013]: ./reviews/rc-013-ci-workflows.md
+[77b48ec]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/034-quizzler/commit/77b48ec969dadb9cee7c36ca091ee3977a06f030
