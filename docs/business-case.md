@@ -4,14 +4,15 @@
 | Key | Value |
 | --- | --- |
 | ID | BC-001 |
-| CrossReference | [SA-001] |
+| CrossReference | [SA-001], [MIL-005] |
 | Language | en |
-| Domain | it |
+| Domain | education |
 
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-18 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | [2133243] |
+| 2026-10-18 | Deprecated | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | [2133243] |
+| 2026-11-16 | Accepted | Jens Tirsvad Nielsen | S01 (AI as stand-in) | Added objective O8, success criterion SC9, a scope item, an out-of-scope item, a risk and constraints for the baseline milestone MIL-005; changed SC8 to five milestones; set the domain to education; reviewed in autonomous mode, not independent | [77b48ec] |
 
 ---
 
@@ -42,6 +43,7 @@ A small, well-documented reference solution lets S02 compare their own solutions
 | O5 | A newcomer can create a local `.venv`, upgrade pip, run the app and the tests from the README alone. |
 | O6 | The repository has a description, topics, a README with a screenshot and a wiki in English, Danish and Bahasa Malaysia. |
 | O7 | Every step is traceable: each gateway is a reviewed milestone with tasks as issues, delivered by one pull request. |
+| O8 | The finished project is brought to the common baseline of the framework: the adopted framework release, the wiki sidebar in the framework's shape, complete licence metadata and review records for every changed document ([MIL-005]). |
 
 ## Scope
 
@@ -54,6 +56,7 @@ A small, well-documented reference solution lets S02 compare their own solutions
 - README from the framework template, with instructions for running the app and the tests, and a screenshot.
 - Wiki pages in English, Danish and Bahasa Malaysia, with screenshots.
 - Repository description and topics on the git host.
+- The baseline milestone [MIL-005]: the framework release, the wiki sidebar in the framework's shape, the README without the private framework files in its appendix, licence and project URL metadata, `.editorconfig`, `.env.example`, review records and a current traceability matrix. It changes no behaviour of the program.
 
 ### Out of Scope
 
@@ -61,6 +64,7 @@ A small, well-documented reference solution lets S02 compare their own solutions
 - Packaging for PyPI or an installer.
 - Runtime dependencies (the standard library is enough).
 - Automated GUI tests and CI pipelines (a later extension).
+- Any change to `src/` or `tests/` in the baseline milestone [MIL-005].
 
 ## Expected Benefits
 
@@ -90,7 +94,8 @@ The project supports S01's goal of completing the bootcamp with portfolio-qualit
 | SC5 | Setup from README | A fresh clone reaches a running app in 5 commands or fewer | Dry run of the README steps |
 | SC6 | Runtime dependencies | 0 third-party runtime dependencies | `dependencies = []` in `pyproject.toml` |
 | SC7 | Languages | Wiki has 3 languages with the same page set | Page listing and `framework/scripts/check-languages.sh` |
-| SC8 | Traceability | 4 of 4 milestones `Accepted` with a `Go` review; every task closed by a pull request | Milestone documents and issue list |
+| SC8 | Traceability | 5 of 5 milestones `Accepted` with a `Go` review; every task closed by a pull request | Milestone documents and issue list |
+| SC9 | The baseline milestone is done (O8) | The wiki sidebar has the framework's shape, `framework/scripts/check-readme.sh`, `framework/scripts/check-languages.sh` and `framework/scripts/check-editorconfig.sh` exit with code 0, 100 % of the continuous integration (CI) checks of the pull request of [MIL-005] pass | Files in `docs/wiki/`, the script exit codes and the pull request status on the git host |
 
 ## Risks
 
@@ -101,6 +106,7 @@ The project supports S01's goal of completing the bootcamp with portfolio-qualit
 | Screenshots or commits expose a token | Disclosure of a secret | `.env` is git-ignored and never read by the application; screenshots show the application window only |
 | Danish or Bahasa Malaysia text contains errors | S02 and S03 are misled | English is authoritative, translations follow it page by page, S01 is asked to check Danish, and Bahasa Malaysia is flagged as unchecked until a reader has checked it |
 | The plan-first gate blocks work because a review is only a stand-in | Delay | The user's acceptance of the plan covers the language and domain check; the stand-in is recorded on each review |
+| The documents of the baseline milestone [MIL-005] change documents that were accepted earlier, and the AI stand-in for S01 reviews them | Medium: a defect is missed because the review is not independent | Every review record of the baseline says `Mode: autonomous, not independent`, the program and its tests are not changed, and the end-of-run summary lists the reviews for challenge |
 
 ## Assumptions
 
@@ -117,6 +123,8 @@ The project supports S01's goal of completing the bootcamp with portfolio-qualit
 - Tokens come from the git-ignored `.env`, for personal use only; the project neither imports nor tests it.
 - One pull request per milestone; a reviewer other than the author merges (here: the user), and the AI never bypasses a required check.
 - Target window: 2026-10-18 to 2026-10-25.
+- The baseline milestone [MIL-005] starts 2026-11-16 and is finished within one week, by 2026-11-23. For that milestone only, an AI stand-in for S01 reviews and accepts the changed documents.
+- The Product Owner (PO) language is English and the PO domain is education (it was IT until [MIL-005]; the documents that [MIL-005] does not change keep the domain `it`, see the Open Issues of [PP-001]).
 
 ## Cost–Benefit Assessment
 
@@ -143,3 +151,6 @@ Proceed — the scope is small, the risks have mitigations and every objective i
 
 [SA-001]: ./stakeholder-analysis.md
 [2133243]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/034-quizzler/commit/21332432e3c81336344ef3dbc71123aab76c9cfb
+[MIL-005]: ./milestones/mil-005-framework-baseline.md
+[PP-001]: ./project-plan.md
+[77b48ec]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/034-quizzler/commit/77b48ec969dadb9cee7c36ca091ee3977a06f030
