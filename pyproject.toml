@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=68"]
+requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -9,8 +9,14 @@ description = "True/false quiz app with Tkinter and the Open Trivia Database (Ud
 readme = "README.md"
 requires-python = ">=3.13"
 license = "AGPL-3.0-only"
+authors = [{ name = "Jens Tirsvad Nielsen" }]
 license-files = ["LICENSE"]
 dependencies = []
+
+[project.urls]
+Repository = "https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/034-quizzler"
+Documentation = "https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/034-quizzler/wiki"
+"Issue tracker" = "https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/034-quizzler/issues"
 
 [project.optional-dependencies]
 dev = [
